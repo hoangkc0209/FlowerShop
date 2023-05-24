@@ -1,0 +1,78 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+android {
+    signingConfigs {
+        Nhom3 {
+            storeFile file('C:\\Users\\DELL\\Desktop\\btl_nhom3\\Nhom3FlowerShop.jks')
+            storePassword '123456'
+            keyAlias 'Nhom3'
+            keyPassword '123456'
+        }
+    }
+    namespace 'com.example.nhom3_flowershop'
+    compileSdkVersion 33
+//    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.nhom3_flowershop"
+        minSdkVersion 29
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.Nhom3
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding{
+        enabled=true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'org.jetbrains:annotations:15.0'
+    implementation files('libs\\disklrucache-4.12.0-sources.jar')
+    implementation files('libs\\glide-4.12.0-sources.jar')
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation platform('com.google.firebase:firebase-bom:31.5.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    /**
+     * Glide :- https://github.com/bumptech/glide
+     */
+    implementation 'com.github.bumptech.glide:annotations:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation ("com.github.bumptech.glide:glide:4.14.2@aar") {
+        transitive = true
+    }
+}

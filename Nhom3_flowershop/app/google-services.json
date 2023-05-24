@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "264013035957",
+    "project_id": "projectnhom3flowershop",
+    "storage_bucket": "projectnhom3flowershop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:264013035957:android:f85508240396c76e3781fc",
+        "android_client_info": {
+          "package_name": "com.example.nhom3_flowershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "264013035957-sv8qfikq4chihuv86t7cjdkk34h6dtef.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nhom3_flowershop",
+            "certificate_hash": "c051043535dff53a560782ac2b2f03c6425b2459"
+          }
+        },
+        {
+          "client_id": "264013035957-vfoa3jjvlm4aue28otrjefu9i6sflb2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxhn4iln5gNEoy85A61905HZp8_M3taME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "264013035957-vfoa3jjvlm4aue28otrjefu9i6sflb2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

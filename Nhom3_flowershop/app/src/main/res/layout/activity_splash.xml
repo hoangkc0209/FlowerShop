@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar"
+    tools:context=".View.SplashActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logoflowershop"
+        app:layout_constraintBottom_toBottomOf="@id/lengan"
+        app:layout_constraintEnd_toEndOf="@id/lephai"
+        app:layout_constraintStart_toStartOf="@id/letrai"
+        app:layout_constraintTop_toTopOf="@id/letren" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Chào mừng bạn tới với Flower Shop !
+Sản phầm của Nhóm bài tập lớn 03
+                    Giảng viên: Nguyễn Hoàng Anh"
+        android:textAlignment="center"
+        android:textColor="@color/mauchu"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@id/lephai"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/letrai"
+        tools:layout_editor_absoluteY="571dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/letrai"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lephai"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/letren"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/leduoi"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lengan"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
